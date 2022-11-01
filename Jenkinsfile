@@ -5,8 +5,8 @@ pipeline{
     stages {
         stage ('docker'){
             steps {
-                sh "docker cp index.html jay:/usr/local/apache2/htdocs/index.html"
-                sh "chmod -R 777 /usr"
+                sh "docker cp index.html jay:/usr/local/apache2/htdocs/"
+                sh "chmod -R 777 /var"
             }
         }
     }
