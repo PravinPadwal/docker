@@ -6,7 +6,7 @@ pipeline{
         stage ('docker'){
             steps {
    
-                sh "docker cp index.html kuldip:/usr/local/apache2/htdocs/index.html"
+                sh "docker cp index.html kuldip:/usr/local/apache2/htdocs/"
                 sh "chmod -R 777 /var"
             }
         }
