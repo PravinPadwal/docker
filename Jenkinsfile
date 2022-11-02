@@ -7,7 +7,7 @@ pipeline{
             steps {
    
                 sh "docker cp index.html kuldip:/usr/local/apache2/htdocs/"
-                sh "chmod -R 777 /var"
+                sh "chmod -R 755 /var"
             }
         }
     }
